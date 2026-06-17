@@ -63,7 +63,8 @@ public void errorPn(){
 	- 排除: 源码内未对user_key进行处理，只是增加了从zk中获取slot路由信息，再使用对应的pika实例
 - 不用封装库，直接使用Jedis库或socket连接
 	- 排除:同样存在相同问题
-- pika服务的问题，大概率
+
+**pika服务的问题，大概率**
 
 使用Jedis和socket测试代码：
 ```java
