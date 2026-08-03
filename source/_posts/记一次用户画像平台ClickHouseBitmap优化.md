@@ -138,7 +138,8 @@ category: ClickHouse
 | 本地表+order+idnex_granularity | index_granularity=64 | coordinator | 38.67 GiB（-37.5%   | 8.76~76.82 GiB    |
 |                             | index_granularity=32 | coordinator | 33.07 GiB（-46.7%）  | 6.40~63.55 GiB    |
 |                             | index_granularity=4  | coordinator | 21.21 GiB（-66.0%）  | 2.55~40.84 GiB    |
-注: 本地计算和分布式表不能同一拿峰值直接对比，本地表一条sql本地执行，分布式表将分为至少6条SQL到remote执行。
+
+> 注: 本地计算和分布式表不能同一拿峰值直接对比，本地表一条sql本地执行，分布式表将分为至少6条SQL到remote执行。
 
 **监控**
 对比`本地表+order+idnex_granularity=4`和当前方案的对比，17:00开始为线上方案方案，19:00为`本地表+order+idnex_granularity=4`方案。
